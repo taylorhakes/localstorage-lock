@@ -1,0 +1,33 @@
+{
+  "name": "localstorage-lock",
+  "version": "1.0.0",
+  "description": "Generic localstorage lock implementation",
+  "main": "lib/index.js",
+  "esnext": "src/index.js",
+  "scripts": {
+    "test": "./test.js",
+    "build": "run-p build:**",
+    "build:umd": "cross-env NODE_ENV=development rollup -i src/index.js -o lib/index.js -c rollup.umd.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylorhakes/localstorage-lock.git"
+  },
+  "author": "Taylor Hakes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taylorhakes/localstorage-lock/issues"
+  },
+  "homepage": "https://github.com/taylorhakes/localstorage-lock#readme",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
+    "mock-local-storage": "^1.0.5",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.8.2",
+    "rollup": "^0.52.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-uglify": "^2.0.1"
+  }
+}
