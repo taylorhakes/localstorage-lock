@@ -1,11 +1,11 @@
 {
   "name": "localstorage-lock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generic localstorage lock implementation",
   "main": "lib/index.js",
   "esnext": "src/index.js",
   "scripts": {
-    "test": "./test.js",
+    "test": "node ./test.js",
     "build": "run-p build:**",
     "build:umd": "cross-env NODE_ENV=development rollup -i src/index.js -o lib/index.js -c rollup.umd.config.js"
   },

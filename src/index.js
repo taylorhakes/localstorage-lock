@@ -3,7 +3,7 @@ function getId() {
 }
 
 export function runWithLock(key, fn, { timeout=1000, lockWriteTime=50, checkTime=10, retry=true} = {}) {
-  const timerRunWithLock = () => setTimeout(runWithLock.bind(null, key, fn, { timeout, lockWriteTime, checkTime}), checkTime);
+  const timerRunWithLock = () => setTimeout(runWithLock.bind(null, key, fn, { timeout, lockWriteTime, checkTime, retry }), checkTime);
   const result = localStorage.getItem(key);
   if (result) {
 
