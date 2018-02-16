@@ -17,7 +17,7 @@ Options:
 }
 ```
 
-####Example Use
+#### Example Use
 ```js
 
 // Make sure only one browser window retrieves a localstorage key and does console.log
